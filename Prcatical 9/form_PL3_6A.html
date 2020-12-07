@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+
+	h1{
+		font-family:Arial;
+		text-align:center;
+	}
+	table {
+		  border-collapse: collapse;
+		}
+	table.table2 td {
+		  border-bottom: 1px dashed black;
+		}
+	table th{
+		font-weight:bold;
+		font-family:Arial;
+	}
+  body{
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+	</style>
+	<script type="text/javascript">
+		function display_alert(){
+		  alert("Your response has been recorded!!")
+		}
+
+
+	</script>
+</head>
+<body >
+	<header>
+
+		<h1><img src="http://www.walchandsangli.ac.in/images/Walchand_11.gif" alt="" width=70px" height="50px"></img>College Re-opening</h1>
+	</header>
+
+
+<form>
+			<section>
+				<table class="table1" align="center" width="550px">
+					<tr>
+						<td>
+								<label for ="name"><strong> Enter Student's Name: </strong></label>
+								<input type="text" id="name" placeholder="Name"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+								<label for ="email"><strong>Enter Email:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</strong></label>
+								<input type="email" id="email" placeholder="abc012@gmail.com"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+								<label for="prn"><strong>Enter PRN:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</strong></label>
+								<input type ="text" id="prn" placeholder="PRN"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+								<label for="question"><strong>Year Of Studying:&nbsp &nbsp &nbsp &nbsp &nbsp</strong></label>
+								<select name="question" id="question">
+									<option value="1">First Year</option>
+									<option value="2">Second Year</option>
+									<option value="3">Third Year</option>
+									<option value="4">Fourth Year</option>
+								</select><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+								<label for="Dept"><strong>Choose Department:&nbsp &nbsp &nbsp</strong></label>
+								<select name="Dept" id="Dept">
+									<option value="CS">Computer Science And Engineering</option>
+									<option value="IT">Information Technology</option>
+									<option value="Civ">Civil Engineering</option>
+									<option value="Mech">Mechanical Engineering</option>
+								</select><br><br>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+								<label for="ID"><strong>Upload ID Card:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<strong></label>
+								<input type="file" id="ID" accept="application/pdf"><br><br>
+						</td>
+					</tr>
+			</table>
+
+<center>
+  <table class="table2" width="550px">
+			<th>
+				<h3><center>Post Covid scenario</center></h3>
+			</th>
+			<tr>
+				<td>
+						<label for="syllabus">1.Satisfied with Online Teaching</label>
+				</td>
+				<td>
+						<input type="radio" name="syllabus">Agree<br>
+						<input type="radio" name="syllabus"> Strongly Agree<br>
+						<input type="radio" name="syllabus">Disgree<br>
+						<input type="radio" name="syllabus">Strongly disgree<br>
+						<input type="radio" name="syllabus">Neutral<br>
+				</td>
+			</tr>
+				<td>
+					<label for="Teach">2.Is Online examination fair for all</label>
+				</td>
+				<td>
+					<input type="radio" name="Teach">Agree<br>
+					<input type="radio" name="Teach"> Strongly Agree<br>
+					<input type="radio" name="Teach">Disgree<br>
+					<input type="radio" name="Teach">Strongly disgree<br>
+					<input type="radio" name="Teach">Neutral<br>
+				</td>
+
+			<tr>
+				<td>
+					<label for="lab">3.Should the college be opened after diwali holidays</label>
+				</td>
+				<td>
+					<input type="radio" name="lab">Yes<br>
+					<input type="radio" name="lab">No<br>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Academics">Do you want Hostel facility</label>
+				</td>
+				<td>
+					<input type="radio" name="Academic">Yes<br>
+					<input type="radio" name="Academic">No<br>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="suggestion">Write Your Suggestions</label>
+				</td>
+				<br>
+				<td>
+					<textarea name="bio" id="bio" cols="40" rows="10" placeholder="About Department!!"></textarea><br><br>
+				</td>
+			</tr>
+		</table>
+    </center>
+	</section>
+
+	<div align="center">
+			<br><br>
+			<button name = "button" value = "Edit" type = "reset">Reset</button>
+			<button name = "button" value = "submit" onclick="display_alert()" type = "submit">Submit</button>
+	</div>
+</form>
+</body>
+</html>
