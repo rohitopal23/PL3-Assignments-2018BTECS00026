@@ -1,0 +1,40 @@
+body{
+  background-color: #eaf6f6;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+
+  height: 1px;
+  width: 10%;
+}
+
+h1{
+  color: #66bfbf;
+}
+
+h3{
+  color: #66bfbf;
+}
+.all_languages {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all_languages > h1, .language {
+  margin: 10px;
+  padding: 5px;
+}
+
+.language {
+  background: white;
+}
+
+.language > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
